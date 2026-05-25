@@ -102,6 +102,11 @@ h1 span{color:var(--gold)}
 footer{text-align:center;padding:8px 16px 24px;color:var(--tl);font-size:11px}
 footer span{color:var(--gold)}
 @media(min-width:640px){h1{font-size:34px}.tval{font-size:32px}}
+.pf-wrap{background:#fff;border-radius:14px;padding:48px 24px;text-align:center;border:1px solid var(--brd);box-shadow:0 1px 3px rgba(10,37,64,.04);margin-top:8px}
+.pf-icon{font-size:48px;color:var(--gold);margin-bottom:16px;line-height:1}
+.pf-title{font-size:22px;font-weight:900;color:var(--az);margin-bottom:12px;letter-spacing:-.5px}
+.pf-sub{font-size:14px;color:var(--tm);line-height:1.55;max-width:420px;margin:0 auto 24px}
+.pf-cta{display:inline-block;font-size:12px;font-weight:800;letter-spacing:2px;color:var(--gold);background:rgba(200,164,92,.1);padding:10px 22px;border-radius:24px;border:1px solid var(--gold)}
 </style>
 </head>
 <body>
@@ -111,7 +116,7 @@ footer span{color:var(--gold)}
   <div class="sub">Escolha serviços avulsos ou selecione um plano mensal.</div>
 </header>
 <div class="ctn">
-  <div class="tabs"><button class="tab a" data-tab="av">Serviços Avulsos</button><button class="tab" data-tab="pk">Pacotes Mensais</button></div>
+  <div class="tabs"><button class="tab a" data-tab="av">Serviços Avulsos</button><button class="tab" data-tab="pk">Pacotes Mensais</button><button class="tab" data-tab="pf">Portfólio</button></div>
 
   <!-- ===== AVULSOS ===== -->
   <div class="tc a" id="tab-av">
@@ -120,20 +125,21 @@ footer span{color:var(--gold)}
     <section class="cat">
       <div class="ch">🎬 PRODUÇÃO COMPLETA · CÂMERA PROFISSIONAL</div>
       <div class="cd">A gente vai até você com câmera profissional, iluminação e áudio. Grava, edita e entrega os vídeos prontos pra postar.</div>
-      <div class="si" data-group="cam" data-price="800" data-label="2 vídeos teste (câmera)"><div class="sb">✓</div><div class="ii"><div class="in">2 vídeos teste</div><div class="ip"><b>R$ 800</b> · captação + edição + entrega em 5 dias</div></div></div>
-      <div class="si" data-group="cam" data-price="2800" data-label="4 vídeos (câmera)"><div class="sb">✓</div><div class="ii"><div class="in">4 vídeos</div><div class="ip"><b>R$ 2.800</b> · 1 meia diária de gravação + 4 edições</div></div></div>
-      <div class="si" data-group="cam" data-price="4000" data-label="6 vídeos (câmera)"><div class="sb">✓</div><div class="ii"><div class="in">6 vídeos</div><div class="ip"><b>R$ 4.000</b> · 1 diária de gravação + 6 edições</div></div></div>
-      <div class="si" data-group="cam" data-price="5500" data-label="10 vídeos (câmera)"><div class="sb">✓</div><div class="ii"><div class="in">10 vídeos</div><div class="ip"><b>R$ 5.500</b> · 1 diária de gravação + 10 edições</div></div></div>
+      <div class="si" data-group="cam" data-price="1000" data-label="1 vídeo avulso (câmera)"><div class="sb">✓</div><div class="ii"><div class="in">1 vídeo avulso</div><div class="ip"><b>R$ 1.000</b> · captação + edição + entrega em 5 dias</div></div></div>
+      <div class="si" data-group="cam" data-price="2300" data-label="4 vídeos (câmera)"><div class="sb">✓</div><div class="ii"><div class="in">4 vídeos</div><div class="ip"><b>R$ 2.300</b> · 1 meia diária de gravação + 4 edições</div></div></div>
+      <div class="si" data-group="cam" data-price="4200" data-label="8 vídeos (câmera)"><div class="sb">✓</div><div class="ii"><div class="in">8 vídeos</div><div class="ip"><b>R$ 4.200</b> · 1 diária de gravação + 8 edições</div></div></div>
+      <div class="si" data-group="cam" data-price="6000" data-label="12 vídeos (câmera)"><div class="sb">✓</div><div class="ii"><div class="in">12 vídeos</div><div class="ip"><b>R$ 6.000</b> · 1 diária de gravação + 12 edições</div></div></div>
     </section>
 
     <!-- PRODUÇÃO CELULAR (single select) -->
     <section class="cat">
       <div class="ch">📱 PRODUÇÃO COMPLETA · CELULAR</div>
       <div class="cd">Gravação com celular profissional, mais orgânica e nativa pra TikTok, Reels e Shorts. Mesma edição profissional.</div>
-      <div class="si" data-group="cel" data-price="500" data-label="2 vídeos teste (celular)"><div class="sb">✓</div><div class="ii"><div class="in">2 vídeos teste</div><div class="ip"><b>R$ 500</b> · captação + edição + entrega em 5 dias</div></div></div>
+      <div class="si" data-group="cel" data-price="750" data-label="1 vídeo avulso (celular)"><div class="sb">✓</div><div class="ii"><div class="in">1 vídeo avulso</div><div class="ip"><b>R$ 750</b> · captação + edição + entrega em 5 dias</div></div></div>
       <div class="si" data-group="cel" data-price="1800" data-label="4 vídeos (celular)"><div class="sb">✓</div><div class="ii"><div class="in">4 vídeos</div><div class="ip"><b>R$ 1.800</b> · 1 meia diária de gravação + 4 edições</div></div></div>
-      <div class="si" data-group="cel" data-price="2600" data-label="6 vídeos (celular)"><div class="sb">✓</div><div class="ii"><div class="in">6 vídeos</div><div class="ip"><b>R$ 2.600</b> · 1 diária de gravação + 6 edições</div></div></div>
-      <div class="si" data-group="cel" data-price="3800" data-label="10 vídeos (celular)"><div class="sb">✓</div><div class="ii"><div class="in">10 vídeos</div><div class="ip"><b>R$ 3.800</b> · 1 diária de gravação + 10 edições</div></div></div>
+      <div class="si" data-group="cel" data-price="3200" data-label="8 vídeos (celular)"><div class="sb">✓</div><div class="ii"><div class="in">8 vídeos</div><div class="ip"><b>R$ 3.200</b> · 1 diária de gravação + 8 edições</div></div></div>
+      <div class="si" data-group="cel" data-price="4500" data-label="12 vídeos (celular)"><div class="sb">✓</div><div class="ii"><div class="in">12 vídeos</div><div class="ip"><b>R$ 4.500</b> · 1 diária de gravação + 12 edições</div></div></div>
+      <div class="si" data-group="cel" data-price="5600" data-label="16 vídeos (celular)"><div class="sb">✓</div><div class="ii"><div class="in">16 vídeos</div><div class="ip"><b>R$ 5.600</b> · 1 a 2 diárias de gravação + 16 edições</div></div></div>
     </section>
 
     <!-- SÓ EDIÇÃO (counter) -->
@@ -148,17 +154,17 @@ footer span{color:var(--gold)}
     <section class="cat">
       <div class="ch">📷 SÓ CAPTAÇÃO · CÂMERA PROFISSIONAL</div>
       <div class="cd">Precisa só da equipe de filmagem? A gente grava e entrega o material bruto pra você editar.</div>
-      <div class="it" data-id="cp-m" data-price="800" data-type="counter" data-label="Meia diária câmera"><div class="ii"><div class="in">Meia diária (até 3h)</div><div class="ip"><b>R$ 800</b> · 1 câmera, deslocamento incluso</div></div><div class="ct"><button class="minus off">−</button><span class="cv">0</span><button class="plus">+</button></div></div>
-      <div class="it" data-id="cp-d" data-price="1200" data-type="counter" data-label="Diária câmera"><div class="ii"><div class="in">Diária completa (até 6h)</div><div class="ip"><b>R$ 1.200</b> · 1 câmera, deslocamento incluso</div></div><div class="ct"><button class="minus off">−</button><span class="cv">0</span><button class="plus">+</button></div></div>
-      <div class="it" data-id="cp-2" data-price="2000" data-type="counter" data-label="Diária 2 câmeras"><div class="ii"><div class="in">Diária 2 câmeras</div><div class="ip"><b>R$ 2.000</b> · cobertura dupla, ideal pra eventos</div></div><div class="ct"><button class="minus off">−</button><span class="cv">0</span><button class="plus">+</button></div></div>
+      <div class="it" data-id="cp-m" data-price="1200" data-type="counter" data-label="Meia diária câmera"><div class="ii"><div class="in">Meia diária (até 3h)</div><div class="ip"><b>R$ 1.200</b> · 1 câmera, deslocamento incluso</div></div><div class="ct"><button class="minus off">−</button><span class="cv">0</span><button class="plus">+</button></div></div>
+      <div class="it" data-id="cp-d" data-price="1800" data-type="counter" data-label="Diária câmera"><div class="ii"><div class="in">Diária completa (até 6h)</div><div class="ip"><b>R$ 1.800</b> · 1 câmera, deslocamento incluso</div></div><div class="ct"><button class="minus off">−</button><span class="cv">0</span><button class="plus">+</button></div></div>
+      <div class="it" data-id="cp-2" data-price="2800" data-type="counter" data-label="Diária 2 câmeras"><div class="ii"><div class="in">Diária 2 câmeras</div><div class="ip"><b>R$ 2.800</b> · cobertura dupla, ideal pra eventos</div></div><div class="ct"><button class="minus off">−</button><span class="cv">0</span><button class="plus">+</button></div></div>
     </section>
 
     <!-- SÓ CAPTAÇÃO CELULAR (counter) -->
     <section class="cat">
       <div class="ch">📱 SÓ CAPTAÇÃO · CELULAR</div>
       <div class="cd">Captação ágil com celular profissional. Entrega do material bruto.</div>
-      <div class="it" data-id="cc-m" data-price="400" data-type="counter" data-label="Meia diária celular"><div class="ii"><div class="in">Meia diária (até 3h)</div><div class="ip"><b>R$ 400</b> · deslocamento incluso</div></div><div class="ct"><button class="minus off">−</button><span class="cv">0</span><button class="plus">+</button></div></div>
-      <div class="it" data-id="cc-d" data-price="700" data-type="counter" data-label="Diária celular"><div class="ii"><div class="in">Diária completa (até 6h)</div><div class="ip"><b>R$ 700</b> · deslocamento incluso</div></div><div class="ct"><button class="minus off">−</button><span class="cv">0</span><button class="plus">+</button></div></div>
+      <div class="it" data-id="cc-m" data-price="700" data-type="counter" data-label="Meia diária celular"><div class="ii"><div class="in">Meia diária (até 3h)</div><div class="ip"><b>R$ 700</b> · deslocamento incluso</div></div><div class="ct"><button class="minus off">−</button><span class="cv">0</span><button class="plus">+</button></div></div>
+      <div class="it" data-id="cc-d" data-price="1200" data-type="counter" data-label="Diária celular"><div class="ii"><div class="in">Diária completa (até 6h)</div><div class="ip"><b>R$ 1.200</b> · deslocamento incluso</div></div><div class="ct"><button class="minus off">−</button><span class="cv">0</span><button class="plus">+</button></div></div>
     </section>
 
     <!-- EXTRAS -->
@@ -178,8 +184,10 @@ footer span{color:var(--gold)}
   <div class="tc" id="tab-pk">
     <div class="sug show" style="display:block;margin-bottom:16px;margin-top:0"><strong>Como funciona:</strong> toque no pacote que te interessa. Ele será incluído automaticamente no seu pedido de orçamento.</div>
 
-    <div class="pk" data-pack="Teste" data-pp="2500"><div class="pb">✓</div>
-      <div class="ph"><div><div class="pn">Teste</div><span class="pnw">NOVO</span></div><div class="pp">R$ 2.500 <small>/mês</small></div></div>
+    <div class="stit" style="margin-top:0">🎬 Planos Câmera</div>
+
+    <div class="pk" data-pack="Teste" data-pp="2800"><div class="pb">✓</div>
+      <div class="ph"><div><div class="pn">Teste</div><span class="pnw">ENTRADA</span></div><div class="pp">R$ 2.800 <small>/mês</small></div></div>
       <div class="pby"><div class="pds">Pra conhecer a Azura sem compromisso grande.</div>
         <div class="pi"><span class="pc">✓</span> Planejamento editorial</div>
         <div class="pi"><span class="pc">✓</span> 1 meia diária de captação</div>
@@ -188,8 +196,8 @@ footer span{color:var(--gold)}
         <div class="pi"><span class="pc">✓</span> <strong>4 conteúdos por mês</strong></div>
         <div class="pst">✓ Pacote selecionado</div></div></div>
 
-    <div class="pk" data-pack="Essencial" data-pp="4500"><div class="pb">✓</div>
-      <div class="ph"><div><div class="pn">Essencial</div></div><div class="pp">R$ 4.500 <small>/mês</small></div></div>
+    <div class="pk" data-pack="Essencial" data-pp="4700"><div class="pb">✓</div>
+      <div class="ph"><div><div class="pn">Essencial</div></div><div class="pp">R$ 4.700 <small>/mês</small></div></div>
       <div class="pby"><div class="pds">Pra começar a girar a roda.</div>
         <div class="pi"><span class="pc">✓</span> Planejamento editorial mensal</div>
         <div class="pi"><span class="pc">✓</span> 1 diária de captação</div>
@@ -203,18 +211,18 @@ footer span{color:var(--gold)}
       <div class="ph"><div><div class="pn">Presença</div></div><div class="pp">R$ 6.500 <small>/mês</small></div></div>
       <div class="pby"><div class="pds">Pra ocupar espaço de verdade.</div>
         <div class="pi"><span class="pc">✓</span> Planejamento editorial com roteiros</div>
-        <div class="pi"><span class="pc">✓</span> 2 diárias de captação (quinzenal)</div>
+        <div class="pi"><span class="pc">✓</span> 1 diária de captação</div>
         <div class="pi"><span class="pc">✓</span> Edição profissional de vídeos curtos</div>
         <div class="pi"><span class="pc">✓</span> Design completo para feed e stories</div>
         <div class="pi"><span class="pc">✓</span> Publicação, copy e gestão de comentários</div>
         <div class="pi"><span class="pc">✓</span> <strong>12 conteúdos por mês</strong></div>
         <div class="pst">✓ Pacote selecionado</div></div></div>
 
-    <div class="pk rec" data-pack="Crescimento" data-pp="8500"><div class="pb">✓</div>
-      <div class="ph"><div><div class="pn">Crescimento</div><span class="pt">RECOMENDADO</span></div><div class="pp">R$ 8.500 <small>/mês</small></div></div>
+    <div class="pk rec" data-pack="Crescimento" data-pp="8300"><div class="pb">✓</div>
+      <div class="ph"><div><div class="pn">Crescimento</div><span class="pt">RECOMENDADO</span></div><div class="pp">R$ 8.300 <small>/mês</small></div></div>
       <div class="pby"><div class="pds">O ponto ideal pra crescer rápido.</div>
         <div class="pi"><span class="pc">✓</span> Planejamento estratégico com direção criativa</div>
-        <div class="pi"><span class="pc">✓</span> 2 diárias de captação (quinzenal)</div>
+        <div class="pi"><span class="pc">✓</span> 1 diária de captação</div>
         <div class="pi"><span class="pc">✓</span> Edição profissional de vídeos curtos e longos</div>
         <div class="pi"><span class="pc">✓</span> Design avançado para feed, stories e destaques</div>
         <div class="pi"><span class="pc">✓</span> Copy estratégica e interação ativa</div>
@@ -222,17 +230,87 @@ footer span{color:var(--gold)}
         <div class="pi"><span class="pc">✓</span> <strong>16 conteúdos por mês</strong></div>
         <div class="pst">✓ Pacote selecionado</div></div></div>
 
-    <div class="pk" data-pack="Dominância" data-pp="13000"><div class="pb">✓</div>
-      <div class="ph"><div><div class="pn">Dominância</div></div><div class="pp">R$ 13.000 <small>/mês</small></div></div>
+    <div class="pk" data-pack="Crescimento+" data-pp="9700"><div class="pb">✓</div>
+      <div class="ph"><div><div class="pn">Crescimento+</div></div><div class="pp">R$ 9.700 <small>/mês</small></div></div>
+      <div class="pby"><div class="pds">Mais frequência, mais resultado.</div>
+        <div class="pi"><span class="pc">✓</span> Planejamento estratégico com direção criativa</div>
+        <div class="pi"><span class="pc">✓</span> 2 diárias de captação por mês</div>
+        <div class="pi"><span class="pc">✓</span> Edição profissional de vídeos curtos e longos</div>
+        <div class="pi"><span class="pc">✓</span> Design avançado completo</div>
+        <div class="pi"><span class="pc">✓</span> Copy estratégica e interação ativa</div>
+        <div class="pi"><span class="pc">✓</span> Relatório mensal de performance</div>
+        <div class="pi"><span class="pc">✓</span> <strong>20 conteúdos por mês</strong></div>
+        <div class="pst">✓ Pacote selecionado</div></div></div>
+
+    <div class="pk" data-pack="Dominância" data-pp="12300"><div class="pb">✓</div>
+      <div class="ph"><div><div class="pn">Dominância</div></div><div class="pp">R$ 12.300 <small>/mês</small></div></div>
       <div class="pby"><div class="pds">Quando o objetivo é liderar a categoria.</div>
         <div class="pi"><span class="pc">✓</span> Direção criativa e estratégica dedicada</div>
-        <div class="pi"><span class="pc">✓</span> 4 diárias de captação (semanal)</div>
+        <div class="pi"><span class="pc">✓</span> 2 diárias de captação por mês</div>
         <div class="pi"><span class="pc">✓</span> Edição profissional de vídeos curtos e longos</div>
         <div class="pi"><span class="pc">✓</span> Design completo, branding e templates exclusivos</div>
         <div class="pi"><span class="pc">✓</span> Gestão integral das redes</div>
         <div class="pi"><span class="pc">✓</span> Relatório mensal e reunião estratégica</div>
         <div class="pi"><span class="pc">✓</span> <strong>24 conteúdos por mês</strong></div>
         <div class="pst">✓ Pacote selecionado</div></div></div>
+
+    <div class="pk" data-pack="Dominância Pro" data-pp="15000"><div class="pb">✓</div>
+      <div class="ph"><div><div class="pn">Dominância Pro</div><span class="pnw">PREMIUM</span></div><div class="pp">R$ 15.000 <small>/mês</small></div></div>
+      <div class="pby"><div class="pds">Operação de produção de conteúdo dedicada.</div>
+        <div class="pi"><span class="pc">✓</span> Direção criativa e estratégica dedicada</div>
+        <div class="pi"><span class="pc">✓</span> Captação quinzenal</div>
+        <div class="pi"><span class="pc">✓</span> Edição profissional de vídeos curtos e longos</div>
+        <div class="pi"><span class="pc">✓</span> Design completo, branding e templates exclusivos</div>
+        <div class="pi"><span class="pc">✓</span> Gestão integral das redes e atendimento dedicado</div>
+        <div class="pi"><span class="pc">✓</span> Relatório mensal e reuniões estratégicas</div>
+        <div class="pi"><span class="pc">✓</span> <strong>30 conteúdos por mês</strong></div>
+        <div class="pst">✓ Pacote selecionado</div></div></div>
+
+    <div class="stit">📱 Planos Mobile</div>
+
+    <div class="pk" data-pack="Essencial Mobile" data-pp="3700"><div class="pb">✓</div>
+      <div class="ph"><div><div class="pn">Essencial Mobile</div></div><div class="pp">R$ 3.700 <small>/mês</small></div></div>
+      <div class="pby"><div class="pds">Conteúdo orgânico com cara de Reels e TikTok.</div>
+        <div class="pi"><span class="pc">✓</span> Planejamento editorial mensal</div>
+        <div class="pi"><span class="pc">✓</span> 1 diária de captação com celular profissional</div>
+        <div class="pi"><span class="pc">✓</span> Edição profissional de vídeos curtos</div>
+        <div class="pi"><span class="pc">✓</span> Design básico para feed</div>
+        <div class="pi"><span class="pc">✓</span> Publicação e copy</div>
+        <div class="pi"><span class="pc">✓</span> <strong>8 conteúdos por mês</strong></div>
+        <div class="pst">✓ Pacote selecionado</div></div></div>
+
+    <div class="pk" data-pack="Presença Mobile" data-pp="5000"><div class="pb">✓</div>
+      <div class="ph"><div><div class="pn">Presença Mobile</div></div><div class="pp">R$ 5.000 <small>/mês</small></div></div>
+      <div class="pby"><div class="pds">Mais volume, mais conexão com a audiência.</div>
+        <div class="pi"><span class="pc">✓</span> Planejamento editorial com roteiros</div>
+        <div class="pi"><span class="pc">✓</span> 1 diária de captação com celular profissional</div>
+        <div class="pi"><span class="pc">✓</span> Edição profissional de vídeos curtos</div>
+        <div class="pi"><span class="pc">✓</span> Design completo para feed e stories</div>
+        <div class="pi"><span class="pc">✓</span> Publicação, copy e gestão de comentários</div>
+        <div class="pi"><span class="pc">✓</span> <strong>12 conteúdos por mês</strong></div>
+        <div class="pst">✓ Pacote selecionado</div></div></div>
+
+    <div class="pk" data-pack="Crescimento Mobile" data-pp="6300"><div class="pb">✓</div>
+      <div class="ph"><div><div class="pn">Crescimento Mobile</div></div><div class="pp">R$ 6.300 <small>/mês</small></div></div>
+      <div class="pby"><div class="pds">Frequência alta com estética nativa de redes.</div>
+        <div class="pi"><span class="pc">✓</span> Planejamento estratégico</div>
+        <div class="pi"><span class="pc">✓</span> 1 a 2 diárias de captação por mês</div>
+        <div class="pi"><span class="pc">✓</span> Edição profissional de vídeos curtos</div>
+        <div class="pi"><span class="pc">✓</span> Design avançado completo</div>
+        <div class="pi"><span class="pc">✓</span> Copy estratégica e interação ativa</div>
+        <div class="pi"><span class="pc">✓</span> Relatório mensal de performance</div>
+        <div class="pi"><span class="pc">✓</span> <strong>16 conteúdos por mês</strong></div>
+        <div class="pst">✓ Pacote selecionado</div></div></div>
+  </div>
+
+  <!-- ===== PORTFÓLIO ===== -->
+  <div class="tc" id="tab-pf">
+    <div class="pf-wrap">
+      <div class="pf-icon">✦</div>
+      <div class="pf-title">Portfólio em construção</div>
+      <div class="pf-sub">Estamos organizando uma seleção dos nossos melhores trabalhos pra você ver de perto o estilo, a qualidade e o resultado que a Azura entrega.</div>
+      <div class="pf-cta">Em breve, aqui.</div>
+    </div>
   </div>
 
   <!-- ===== FORM ===== -->
@@ -333,11 +411,14 @@ function updTot(){
   d.textContent=tot===0?'Comece selecionando os serviços':cnt===1?'1 item selecionado':cnt+' itens selecionados';
   flash();
   const sg=document.getElementById('sug'),st=document.getElementById('sugT');
-  if(tot>=2500&&tot<4500){st.textContent='O Plano Teste (R$ 2.500/mês) entrega 4 conteúdos com captação. Confira na aba Pacotes Mensais.';sg.classList.add('show')}
-  else if(tot>=4500&&tot<6500){st.textContent='O Plano Essencial (R$ 4.500/mês) entrega 8 conteúdos. Mais vantajoso que avulsos.';sg.classList.add('show')}
-  else if(tot>=6500&&tot<8500){st.textContent='O Plano Presença (R$ 6.500/mês) entrega 12 conteúdos + 2 captações quinzenais.';sg.classList.add('show')}
-  else if(tot>=8500&&tot<13000){st.textContent='O Plano Crescimento (R$ 8.500/mês) é o recomendado. 16 conteúdos + relatório.';sg.classList.add('show')}
-  else if(tot>=13000){st.textContent='O Plano Dominância (R$ 13.000/mês) entrega tudo: 24 conteúdos + 4 captações semanais.';sg.classList.add('show')}
+  if(tot>=2800&&tot<4700){st.textContent='O Plano Teste (R$ 2.800/mês) entrega 4 conteúdos câmera com captação. Confira na aba Pacotes Mensais.';sg.classList.add('show')}
+  else if(tot>=3700&&tot<4700){st.textContent='O Essencial Mobile (R$ 3.700/mês) entrega 8 conteúdos com captação celular. Mais vantajoso que avulsos.';sg.classList.add('show')}
+  else if(tot>=4700&&tot<6500){st.textContent='O Plano Essencial (R$ 4.700/mês) entrega 8 conteúdos câmera + gestão completa. Mais vantajoso que avulsos.';sg.classList.add('show')}
+  else if(tot>=6500&&tot<8300){st.textContent='O Plano Presença (R$ 6.500/mês) entrega 12 conteúdos câmera + gestão completa.';sg.classList.add('show')}
+  else if(tot>=8300&&tot<9700){st.textContent='O Plano Crescimento (R$ 8.300/mês) é o recomendado. 16 conteúdos + relatório mensal.';sg.classList.add('show')}
+  else if(tot>=9700&&tot<12300){st.textContent='O Crescimento+ (R$ 9.700/mês) entrega 20 conteúdos com 2 captações por mês.';sg.classList.add('show')}
+  else if(tot>=12300&&tot<15000){st.textContent='O Plano Dominância (R$ 12.300/mês) entrega 24 conteúdos + gestão integral das redes.';sg.classList.add('show')}
+  else if(tot>=15000){st.textContent='O Dominância Pro (R$ 15.000/mês) é a operação completa: 30 conteúdos, captação quinzenal, atendimento dedicado.';sg.classList.add('show')}
   else{sg.classList.remove('show')}
 }
 
